@@ -1,0 +1,73 @@
+.ibr_card_photo_detail_container {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 200px !important;
+}
+
+.ibr_card_photo_detail_container p {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #000 !important;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+
+.ibr_card_img {
+  height: 550px;
+  width: 1000px;
+  border-radius: 30px;
+}
+
+.ibr_card_photo_detail_container_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ibr_card_photo_detail_container_description {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  margin-top: 10px;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+
+.ibr_card_photo_detail_container_description h2 {
+  margin-bottom: 20px;
+}
+
+.ibr_heder_btn_animation {
+  height: 200px;
+  width: 200px;
+}
+
+.btn_animation {
+  height: 50px !important;
+  width: 200px !important;
+}
+
+.ibr_heder_btn_animation button {
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif !important;
+  border-radius: 20px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.animation_button {
+  margin-left: 10px;
+  height: 30px !important;
+  width: 30px !important;
+}

@@ -1,0 +1,41 @@
+.custom-button-primary {
+  color: #00adb5;
+  background-color: #fff;
+  border: 2px solid #0000 !important;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.basic-button {
+  text-transform: uppercase;
+  border-radius: 25px;
+  width: 170px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: 2px solid #0000 !important;
+}
+
+.custom-button-primary:hover {
+  border: 2px solid #fff;
+  background-color: #00adb5;
+  color: #fff;
+  transition: 0.75s;
+  border: 2px solid #00adb5;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.button-right-icon {
+  margin-left: 8px;
+}
+
+.disabled-button {
+  background-color: rgba(163, 163, 163, 0.719);
+  border: none;
+}

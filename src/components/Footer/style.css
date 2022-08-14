@@ -1,0 +1,67 @@
+.ibr_footer_container {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  position: absolute;
+  text-align: center;
+}
+
+.ibr_footer_lift_side_container {
+  margin-right: 50px;
+}
+.ibr_footer_lift_side_container_a {
+  height: 50px !important;
+  width: 30px !important;
+  margin-left: 50px !important;
+  flex-direction: row-reverse;
+}
+
+.ibr_footer_center_side_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ibr_footer_logo_a {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.ibr_footer_logo_a h3 {
+  height: 40px;
+  width: 120px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ibr_footer_lift_side_container_a img {
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  object-fit: contain;
+  text-decoration: none;
+  color: #000000;
+  font-size: "Josefin Sans", sans-serif;
+}
+
+.ibr_footer_lift_side_container_a_pixel img {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  text-decoration: none;
+  color: #000000;
+  font-size: "Josefin Sans", sans-serif;
+  margin-left: 50px;
+}
