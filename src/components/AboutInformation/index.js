@@ -1,35 +1,39 @@
 import React from "react";
 
-// import Image from "../../assets/images/ibrahim.jpg";
+import Image from "../../assets/images/kareem1.jpg";
 
 import "./style.css";
 
 export default function AboutInformation() {
   return (
-    <div className="ibr_about_information_container">
-      <div className="ibr_description_information_left_side">
-        <div className="ibr_text_hed_description">
+    <div className="kar_about_information_container">
+      <div className="kar_description_information_left_side">
+        <div className="kar_text_hed_description">
           <h3>MY MISSION</h3>
         </div>
 
-        <h1> HELLO! My Name Is Ibrahim Omar </h1>
+        <h1> HELLO! My Name Is Kareem Mohamed </h1>
 
-        <div className="ibr_text_description">
+        <div className="kar_text_description">
           <p>
-            Confident and dedicated photographer with experience in both
-            professional and freelance photography
+            👨 24 <br /> 📞 01203441100 <br />
+            💻 self-taught frontend web Developer. 👨‍💻learn to code |
+            ☀️JavaScript | ⚛️ React.JS. <br />
+            📍Alexandria Egypt
+            <br /> #reactjs #javascript #dev #coffee
           </p>
         </div>
-        <div className="ibr_text_description">
+        <div className="kar_text_description">
           <p>
-            Holds nearly 5 years of working experience with great variety in
-            order to tackle any photography job quickly and effectively
+            Software developer who is responsible to develop Websites and Mobile
+            app using
+            <a className="text-box">JavaScript</a>
           </p>
         </div>
       </div>
-      <div className="ibr_about_information_right_side">
-        <img className="ibr_primary_img" src={Image} alt="images" />
-        <img className="ibr_secondary_img" src={Image} alt="images" />
+      <div className="kar_about_information_right_side">
+        <img className="kar_primary_img" src={Image} alt="images" />
+        <img className="kar_secondary_img" src={Image} alt="images" />
       </div>
     </div>
   );
