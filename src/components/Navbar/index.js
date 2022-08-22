@@ -6,47 +6,85 @@ import { Button } from "@mui/material";
 
 import NavbarMenu from "../NavbarMenu";
 import NavbarRightSide from "../NavbarRightSide";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 import "./style.css";
 
 export default function Navbar({ logout, user }) {
   const [displayMenu, setDisplayMenu] = useState(false);
-
+  const [toggleMenu, setToggleMenu] = useState(false);
   const handleToggle = () => {
     setDisplayMenu(!displayMenu);
   };
 
   return (
-    <div className="ibr_navbar">
-      <div className="ibr_navbar_sides_container">
-        <div className="ibr_navbar_left_container">
-          <Link className="ibr_navbar_logo_link" to="/">
-            STOKAR
+    <div className="ka_navbar">
+      <div className="ka_navbar_sides_container">
+        <div className="ka_navbar_left_container">
+          <Link className="ka_navbar_logo_link" to="/">
+            K-STUDIO
           </Link>
-          <div className="ibr_center_link_navbar">
-            <Link className="ibr_navbar_link_Portfolio" to="/">
-              Portfolio
-            </Link>
-            <Link className="ibr_navbar_link" to="about">
-              ABOUT
-            </Link>
-            <Link className="ibr_navbar_link" to="photo">
-              PHOTO
-            </Link>
-          </div>
+        </div>
+        <div className="ka_center_link_navbar">
+          <Link className="ka_navbar_link_Portfolio" to="/">
+            Portfolio
+          </Link>
+          <Link className="ka_navbar_link" to="about">
+            ABOUT
+          </Link>
+          <Link className="ka_navbar_link" to="photo">
+            PHOTO
+          </Link>
         </div>
         {user?.email ? (
           <div>
             <Button className="navbar-btn-user" onClick={handleToggle}>
-              {user?.email}
+              Menu
             </Button>
           </div>
         ) : (
-          <NavbarRightSide />
+          <div className="navbar-right-side-container">
+            <div className="navbar-right-side-components">
+              <NavbarRightSide />
+            </div>
+            <div>
+              <div className="app__navbar-smallscreen">
+                <MenuIcon onClick={() => setToggleMenu(true)} />
+
+                {toggleMenu && (
+                  <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+                    <CloseIcon
+                      className="overlay__close"
+                      onClick={() => setToggleMenu(false)}
+                    />
+                    <ul className="app__navbar-smallscreen_links">
+                      <li className="p__opensans">
+                        <Link className="ka_navbar_link_Portfolio" to="/">
+                          Portfolio
+                        </Link>
+                      </li>
+                      <li className="p__opensans">
+                        <Link className="ka_navbar_link" to="about">
+                          ABOUT
+                        </Link>
+                      </li>
+                      <li className="p__opensans">
+                        <Link className="ka_navbar_link" to="photo">
+                          PHOTO
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         )}
       </div>
-      <div className="ibr_menu_display">
-        {displayMenu && <NavbarMenu logout={logout} />}
+
+      <div className="ka_menu_display">
+        {displayMenu && <NavbarMenu user={user} logout={logout} />}
       </div>
     </div>
   );

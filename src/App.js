@@ -1,9 +1,22 @@
+import Navigation from "./navigation";
 import "./App.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <div>
-      <h1> kareem </h1>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={true}
+        closeOnClick
+        rtl={true}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <Navigation className="app__bg" />
     </div>
   );
 }

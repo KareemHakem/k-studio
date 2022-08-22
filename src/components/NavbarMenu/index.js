@@ -4,10 +4,10 @@ import AdminMenu from "../AdminMenu";
 
 import "./style.css";
 
-export default function NavbarMenu({ logout }) {
+export default function NavbarMenu({ logout, user }) {
   return (
     <div>
-      <AdminMenu logout={logout} />
+      <AdminMenu user={user} logout={logout} />
     </div>
   );
 }

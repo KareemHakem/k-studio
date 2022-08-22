@@ -3,30 +3,19 @@ import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 
-import Image from "../../assets/images/logo1.jpeg";
+import Image from "../../assets/images/logo.jpg";
+import { Chip } from "@mui/material";
+
+import "./style.css";
 
 export default function ChipAvatar() {
   return (
-    <Stack style={{}} direction="row" spacing={5}>
-      {/* <Chip
-        style={{
-          height: 40,
-          fontWeight: 600,
-        }}
-        avatar={ */}
-      <Avatar
-        style={{
-          height: 40,
-          width: 40,
-          borderRadius: "50%",
-        }}
-        src={Image}
-        alt="ibrahim"
-      />
-      {/* }
-        label="Ibrahim Omar"
+    <Stack direction="row" spacing={5}>
+      <Chip
+        className="chip-nav"
+        avatar={<Avatar className="avatar-nav" src={Image} alt="ibrahim" />}
         variant="outlined"
-      /> */}
+      />
     </Stack>
   );
 }

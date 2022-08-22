@@ -44,7 +44,7 @@
   background-color: #fff;
   min-height: 50px;
   height: auto;
-  width: 190px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,11 +66,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .dropdown_item-1:hover {
   margin-top: 5px !important;
-  color:#00adb5;
+  color: #00adb5;
   width: 80%;
   height: 30px;
   display: flex;
@@ -205,5 +206,50 @@
     height: 60px;
     border-radius: 30px !important;
     transition: 0.75s;
+  }
+}
+
+.menu-btn-user {
+  color: #00adb5 !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  margin-right: 37px;
+  font-size: large;
+  appearance: none;
+  margin-top: 7px;
+}
+
+.menu-btn-user-menu {
+  display: none;
+}
+
+@media screen and (max-width: 601px) {
+  .dropdown_menu {
+    height: auto !important;
+    background-color: #ffffff !important;
+
+    z-index: 1000 !important;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .dropdown_menu {
+    height: 120px !important;
+    background-color: #ffffff !important;
+    margin-bottom: 300px !important;
+    z-index: 1000 !important;
+    position: absolute !important;
+    margin-right: 200px;
+  }
+  .menu-btn-user-menu {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    color: #00adb5 !important;
+    font-family: "Josefin Sans", sans-serif !important;
+    margin-right: 37px !important;
+    font-size: large !important;
+    appearance: none !important;
+    margin-top: 7px !important;
   }
 }

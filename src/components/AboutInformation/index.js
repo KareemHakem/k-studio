@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "../../assets/images/ibrahim.jpg";
+// import Image from "../../assets/images/ibrahim.jpg";
 
 import "./style.css";
 

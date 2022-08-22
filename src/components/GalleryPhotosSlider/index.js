@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Icons } from "../../assets/icons";
+// import { Icons } from "../../assets/icons";
 
 import "./style.css";
 
@@ -38,14 +38,14 @@ export default function GalleryPhotosSlider({
             ))}
           </div>
           <div className="ibr__gallery-images_arrows">
-            <Icons.KeyboardArrowLeftIcon
+            {/* <Icons.KeyboardArrowLeftIcon
               className="gallery__arrow-icon"
               onClick={() => scroll("left")}
             />
             <Icons.KeyboardArrowRightIcon
               className="gallery__arrow-icon"
               onClick={() => scroll("right")}
-            />
+            /> */}
           </div>
         </div>
       )}

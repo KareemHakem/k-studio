@@ -1,0 +1,31 @@
+.btn_hover {
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  color: #000;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.a_hover {
+  text-decoration: none;
+  color: #000;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_hover:hover {
+  transform: scale(1.07);
+  transition: 0.8s;
+}
+
+.flex_app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

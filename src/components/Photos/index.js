@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Icons } from "../../assets/icons";
+// import { Icons } from "../../assets/icons";
 import Button from "@mui/material/Button";
 
 import "./style.css";
@@ -28,7 +28,7 @@ export default function PhotosContainer({
               alignItems: "center",
             }}
           >
-            <Icons.LocationOnIcon style={{ marginBottom: 8 }} />
+            {/* <Icons.LocationOnIcon style={{ marginBottom: 8 }} /> */}
             {card.location}
           </p>
         </div>
@@ -44,14 +44,14 @@ export default function PhotosContainer({
             }
             className="ibr_btn_card_Post"
           >
-            <Icons.EditIcon style={{ color: "#00adb5", marginRight: 5 }} />
+            {/* <Icons.EditIcon style={{ color: "#00adb5", marginRight: 5 }} /> */}
             Edit
           </Button>
           <Button
             onClick={() => handleDeleteCard(card.id)}
             className="ibr_btn_card_Post"
           >
-            <Icons.DeleteIcon style={{ color: "#FF0000", marginRight: 5 }} />
+            {/* <Icons.DeleteIcon style={{ color: "#FF0000", marginRight: 5 }} /> */}
             Delete
           </Button>
         </div>

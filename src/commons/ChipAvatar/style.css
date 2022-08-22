@@ -1,0 +1,28 @@
+.chip-nav {
+  height: 40px !important;
+  font-weight: 600 !important;
+  color: #00adb5 !important;
+  border: 0 !important;
+}
+
+.avatar-nav {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+}
+
+@media screen and (max-width: 700px) {
+  .avatar-nav {
+    height: 27px !important;
+    width: 27px !important;
+    border-radius: 50% !important;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .avatar-nav {
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 50% !important;
+  }
+}

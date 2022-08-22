@@ -1,67 +1,81 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Icons } from "../../assets/icons";
-import Logo from "../../assets/images/500logo.png";
-import Logo2 from "../../assets/images/shoterlogo.png";
-import Logo3 from "../../assets/images/pexels.png";
+
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailIcon from "@mui/icons-material/Email";
+
+import Image1 from "../../assets/images/discord.png";
+import Image2 from "../../assets/images/Wuzz.png";
+import Image3 from "../../assets/images/logo.jpg";
 import "./style.css";
 
 export default function Footer({ handleGoTop }) {
   return (
-    <div className="ibr_footer_container">
-      <div className="ibr_footer_lift_side_container">
+    <div className="kare_footer_container">
+      <div className="kare_footer_lift_side_container">
         <a
-          className="ibr_footer_lift_side_container_link"
-          href="https://www.instagram.com/ibrahimstokar/"
+          className="kare_footer_lift_side_container_link"
+          href="https://github.com/KareemHakem"
         >
-          <Icons.YouTubeIcon style={{ color: "#000", fontSize: 35 }} />
+          <GitHubIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>
         <a
-          className="ibr_footer_lift_side_container_a"
-          href="https://www.instagram.com/ibrahimstokar/"
+          className="kare_footer_lift_side_container_a"
+          href="https://www.instagram.com/kareem_mohamed91/"
         >
-          <Icons.InstagramIcon style={{ color: "#000", fontSize: 35 }} />
+          <InstagramIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>
         <a
-          className="ibr_footer_lift_side_container_a"
-          href="https://www.facebook.com/ibrahimstokar6"
+          className="kare_footer_lift_side_container_a twitter"
+          href="https://twitter.com/KareemM42423808"
         >
-          <Icons.FacebookIcon style={{ color: "#000", fontSize: 35 }} />
+          <TwitterIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>
 
         <a
-          className="ibr_footer_lift_side_container_a"
-          href="https://www.instagram.com/ibrahimstokar/"
+          className="kare_footer_lift_side_container_a facebook"
+          href="https://www.facebook.com/profile.php?id=100012833622272"
         >
-          <Icons.EmailIcon style={{ color: "#000", fontSize: 35 }} />
+          <FacebookIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>
       </div>
 
-      <div className="ibr_footer_center_side_container">
-        <Link className="ibr_footer_logo_a" onClick={handleGoTop} to="/">
-          <h3>STOKAR</h3>
+      <div className="kare_footer_center_side_container">
+        <Link className="kare_footer_logo_a" onClick={handleGoTop} to="/">
+          <img src={Image3} alt="logo" />
         </Link>
       </div>
 
-      <div className="ibr_footer_right_side_container">
+      <div className="kare_footer_right_side_container">
         <a
-          className="ibr_footer_lift_side_container_a"
-          href="https://500px.com/p/ibrahimstokar?view=photos"
+          className="kare_footer_lift_side_container_a"
+          href="https://500px.com/p/kareahimstokar?view=photos"
         >
-          <img src={Logo} alt="logo" />
+          <img src={Image1} alt="logo" />
         </a>
         <a
-          className="ibr_footer_lift_side_container_a"
-          href="https://www.shutterstock.com/g/ibrahim+srokar?rid=269100424&utm_medium=email&utm_source=ctrbreferral-link"
+          className="kare_footer_lift_side_container_a"
+          href="https://wuzzuf.net/profile"
         >
-          <img src={Logo2} alt="logo" />
+          <img src={Image2} alt="logo" />
         </a>
 
         <a
-          className="ibr_footer_lift_side_container_a_pixel"
-          href="https://www.pexels.com/@ibrahim-srokar-997345/?onboarding=completed"
+          className="kare_footer_lift_side_container_a"
+          href="https://www.instagram.com/kareahimstokar/"
         >
-          <img src={Logo3} alt="logo" />
+          <LinkedInIcon style={{ color: "#fff", fontSize: 35 }} />
+        </a>
+
+        <a
+          className="kare_footer_lift_side_container_a"
+          href="https://www.facebook.com/profile.php?id=100012833622272"
+        >
+          <EmailIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>
       </div>
     </div>

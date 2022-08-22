@@ -1,16 +1,27 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
-export default function AdminMenu({ logout }) {
+export default function AdminMenu({ logout, user }) {
   return (
-    <div className=" menu_container">
-      <div className=" menu_container scale-up-center">
+    <div className="menu_container">
+      <div className="menu_container scale-up-center">
         <ul className="dropdown_menu">
           <li className="dropdown_item-1">
-            <Button className="navbar-btn-user" onClick={logout}>
+            <Link className="menu-btn-user-menu" to="/">
+              Portfolio
+            </Link>
+            <Link className="menu-btn-user-menu" to="about">
+              ABOUT
+            </Link>
+            <Link className="menu-btn-user-menu" to="photo">
+              PHOTO
+            </Link>
+
+            <Link to="/" className="menu-btn-user" onClick={logout}>
               logout
-            </Button>
+            </Link>
           </li>
         </ul>
       </div>
