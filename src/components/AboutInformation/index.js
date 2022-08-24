@@ -47,6 +47,12 @@ export default function AboutInformation() {
             Software developer who is responsible to develop Websites and Mobile
             app using
             <a className="text-box">JavaScript</a>
+            <a style={{ color: "#5ED3F3", fontWeight: 600, marginLeft: 10 }}>
+              React
+            </a>
+            <a style={{ color: "#2F74C0", fontWeight: 600, marginLeft: 10 }}>
+              TypeScript
+            </a>
           </p>
         </div>
       </div>

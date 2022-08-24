@@ -29,7 +29,7 @@ export default function InfoCard({ handleNavigationToPhotos }) {
   window.addEventListener("scroll", CheckBoxes);
   return (
     <div className="ifo-part">
-      <h1 className="code-text">
+      <h1 className="info-head-text">
         Developer is an organism that turns coffee into code 😁
       </h1>
       <div className="ifo-part-container-sides">
