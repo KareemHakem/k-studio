@@ -1,6 +1,13 @@
-.ibr_about_page{
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                              flex-direction: column;
+.ibr_about_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden !important;
+}
+
+.kar-info-part {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 150px;
 }

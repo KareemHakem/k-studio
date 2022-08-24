@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import AboutInformation from "../../components/AboutInformation";
-import GalleryPhotosSlider from "../../components/GalleryPhotosSlider";
+import InfoCard from "../../components/InfoCard";
 import "./style.css";
 
 export default function About({ cards }) {
@@ -25,15 +25,13 @@ export default function About({ cards }) {
     }
   };
   return (
-    <div className="ibr_about_page">
-      <AboutInformation />
-
-      <GalleryPhotosSlider
-        handleNavigationToPhotos={handleNavigationToPhotos}
-        scroll={scroll}
-        scrollRef={scrollRef}
-        cards={cards}
-      />
-    </div>
+    <>
+      <div className="ibr_about_page">
+        <AboutInformation />
+      </div>
+      <div className="kar-info-part">
+        <InfoCard handleNavigationToPhotos={handleNavigationToPhotos} />
+      </div>
+    </>
   );
 }

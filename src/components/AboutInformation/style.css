@@ -2,15 +2,17 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 80px;
+  height: 785px;
 }
 
 .kar_about_information_right_side {
   height: 500px;
   width: 500px;
+  margin-right: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
 }
 
 .kar_primary_img {
@@ -19,6 +21,7 @@
   object-fit: cover;
   z-index: 250;
   margin-right: -50px;
+  border-radius: 10px;
 }
 
 .kar_secondary_img {
@@ -26,6 +29,7 @@
   width: 200px !important;
   object-fit: cover;
   opacity: 0.35;
+  border-radius: 10px;
 }
 
 .kar_description_information_left_side {
@@ -56,13 +60,21 @@
   height: auto !important;
   width: 360px;
   background-color: #00acb5d0;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform: translateX(250%);
+  transition: transform 0.5s ease;
 }
+
+.show {
+  transform: translateX(0%);
+}
+
 .kar_text_description p {
   color: #fff !important;
   margin-top: 20px;
@@ -73,4 +85,65 @@
   color: #f7c52f !important;
   font-weight: 600;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1026px) {
+  .kar_description_information_left_side {
+    width: 300px !important;
+    height: 400px !important;
+    margin-left: 50px;
+  }
+  .kar_primary_img {
+    height: 400px !important;
+    width: 240px !important;
+  }
+  .kar_secondary_img {
+    height: 300px !important;
+    width: 130px !important;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .kar_about_information_container {
+    margin-top: 150px !important;
+    margin-right: 50px !important;
+    height: 900px;
+  }
+  .kar_about_information_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .kar_description_information_left_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px !important;
+  }
+
+  .kar_about_information_right_side {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+
+  .kar_primary_img {
+    height: 400px !important;
+    width: 300px !important;
+    border-radius: 5px;
+    margin-bottom: 60px !important;
+    z-index: 0;
+  }
+
+  .kar_secondary_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .kar_about_information_container {
+  }
 }

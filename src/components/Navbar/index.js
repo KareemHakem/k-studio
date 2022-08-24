@@ -31,10 +31,10 @@ export default function Navbar({ logout, user }) {
             Portfolio
           </Link>
           <Link className="ka_navbar_link" to="about">
-            ABOUT
+            About
           </Link>
           <Link className="ka_navbar_link" to="photo">
-            PHOTO
+            Projects
           </Link>
         </div>
         {user?.email ? (
@@ -66,12 +66,12 @@ export default function Navbar({ logout, user }) {
                       </li>
                       <li className="p__opensans">
                         <Link className="ka_navbar_link" to="about">
-                          ABOUT
+                          About
                         </Link>
                       </li>
                       <li className="p__opensans">
                         <Link className="ka_navbar_link" to="photo">
-                          PHOTO
+                          Projects
                         </Link>
                       </li>
                     </ul>

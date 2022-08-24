@@ -5,8 +5,27 @@ import Image from "../../assets/images/kareem1.jpg";
 import "./style.css";
 
 export default function AboutInformation() {
+  const boxes = document.querySelectorAll(".kar_text_description");
+
+  const CheckBoxes = () => {
+    const triggerBottom = (window.innerHeight / 30) * 24;
+    boxes.forEach((box) => {
+      const boxTop = box.getBoundingClientRect().top;
+      if (boxTop < triggerBottom) {
+        box.classList.add("show");
+      } else {
+        box.classList.remove("show");
+      }
+    });
+  };
+  window.addEventListener("scroll", CheckBoxes);
+
   return (
     <div className="kar_about_information_container">
+      <div className="kar_about_information_right_side">
+        <img className="kar_primary_img" src={Image} alt="images" />
+        <img className="kar_secondary_img" src={Image} alt="images" />
+      </div>
       <div className="kar_description_information_left_side">
         <div className="kar_text_hed_description">
           <h3>MY MISSION</h3>
@@ -30,10 +49,6 @@ export default function AboutInformation() {
             <a className="text-box">JavaScript</a>
           </p>
         </div>
-      </div>
-      <div className="kar_about_information_right_side">
-        <img className="kar_primary_img" src={Image} alt="images" />
-        <img className="kar_secondary_img" src={Image} alt="images" />
       </div>
     </div>
   );

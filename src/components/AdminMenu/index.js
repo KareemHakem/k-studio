@@ -13,10 +13,10 @@ export default function AdminMenu({ logout, user }) {
               Portfolio
             </Link>
             <Link className="menu-btn-user-menu" to="about">
-              ABOUT
+              About
             </Link>
             <Link className="menu-btn-user-menu" to="photo">
-              PHOTO
+              Projects
             </Link>
 
             <Link to="/" className="menu-btn-user" onClick={logout}>
