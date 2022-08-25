@@ -39,7 +39,7 @@ export default function CreateCardForm({
           color="success"
           className="input-field"
           width={300}
-          placeholder="location"
+          placeholder="Link"
           onChange={(e) => {
             setNewLink(e.target.value);
           }}
