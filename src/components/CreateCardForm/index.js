@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import Input from "../../commons/Input";
 import "./style.css";
 
@@ -7,7 +7,7 @@ export default function CreateCardForm({
   user,
   setNewImage,
   setNewDate,
-  setNewLocation,
+  setNewLink,
   setNewName,
   setNewDescription,
   handleCreateCard,
@@ -17,6 +17,7 @@ export default function CreateCardForm({
       <div className="card-form-container">
         <h2>{`Create your Card ${user?.user?.email} `}</h2>
         <Input
+          color="success"
           className="input-field"
           width={300}
           placeholder="image"
@@ -24,23 +25,27 @@ export default function CreateCardForm({
             setNewImage(e.target.value);
           }}
         />
+
         <Input
+          color="success"
           className="input-field"
           width={300}
-          placeholder="date"
+          placeholder="Date"
           onChange={(e) => {
             setNewDate(e.target.value);
           }}
         />
         <Input
+          color="success"
           className="input-field"
           width={300}
           placeholder="location"
           onChange={(e) => {
-            setNewLocation(e.target.value);
+            setNewLink(e.target.value);
           }}
         />
         <Input
+          color="success"
           className="input-field"
           width={300}
           placeholder="name"
@@ -49,6 +54,7 @@ export default function CreateCardForm({
           }}
         />
         <Input
+          color="success"
           className="input-field"
           width={300}
           placeholder="description"

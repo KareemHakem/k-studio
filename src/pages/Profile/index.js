@@ -7,7 +7,6 @@ import {
 } from "firebase/auth";
 import { auth, db } from "../../firebase-config";
 
-
 import PhotosContainer from "../../components/Photos";
 import AuthModal from "../../components/AuthModal";
 import { Button } from "@mui/material";
@@ -62,6 +61,10 @@ export default function Profile({ user, cards }) {
     setOpenModal(true);
   };
 
+  const handleUploadPhoto = () => {
+    navigation("/uploadPhoto");
+  };
+
   const handleDeleteCard = async (id) => {
     const cardDoc = doc(db, "cards", id);
     user ? await deleteDoc(cardDoc) : setOpenModal(true);
@@ -76,6 +79,15 @@ export default function Profile({ user, cards }) {
           <h2> To create New Post Click </h2>
           <Button onClick={handleNavigationCreateCard} className="create-btn">
             Create Card
+          </Button>
+        </div>
+      ) : null}
+
+      {user ? (
+        <div className="upload-card">
+          <h2> To Upload Photo </h2>
+          <Button onClick={handleUploadPhoto} className="create-btn">
+            Upload Photo
           </Button>
         </div>
       ) : null}

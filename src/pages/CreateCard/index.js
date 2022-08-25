@@ -7,7 +7,7 @@ import CreateCardForm from "../../components/CreateCardForm";
 export default function CreateCard(user) {
   const [newImage, setNewImage] = useState("");
   const [newDate, setNewDate] = useState("");
-  const [newLocation, setNewLocation] = useState("");
+  const [newLink, setNewLink] = useState("");
   const [newName, setNewName] = useState("");
   const [newDescription, setNewDescription] = useState("");
 
@@ -17,7 +17,7 @@ export default function CreateCard(user) {
     await CardDataService.addCards({
       image: newImage,
       date: newDate,
-      location: newLocation,
+      link: newLink,
       name: newName,
       description: newDescription,
     });
@@ -31,7 +31,7 @@ export default function CreateCard(user) {
         user={user}
         setNewImage={setNewImage}
         setNewDate={setNewDate}
-        setNewLocation={setNewLocation}
+        setNewLink={setNewLink}
         setNewName={setNewName}
         setNewDescription={setNewDescription}
         handleCreateCard={handleCreateCard}

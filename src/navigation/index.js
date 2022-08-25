@@ -7,6 +7,7 @@ import AdminEditProfile from "../pages/AdminEditProfile";
 import Profile from "../pages/Profile";
 import EditForm from "../pages/EditForm";
 import CreateCard from "../pages/CreateCard";
+import Upload from "../pages/Upload";
 
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import CardDataService from "../services/cardServices";
@@ -65,6 +66,7 @@ export default function Navigation() {
           element={<EditForm cards={cards} user={user} />}
         />
         <Route path="/createCard" element={<CreateCard user={user} />} />
+        <Route path="/uploadPhoto" element={<Upload />} />
       </Routes>
       <Footer handleGoTop={handleGoTop} />
     </div>

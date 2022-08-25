@@ -55,7 +55,7 @@ function AuthModal({
           </div>
           <div>
             <div className="auth_login_form-container">
-              <div className="register-form-container">
+              {/* <div className="register-form-container">
                 <Input
                   onChange={(e) => setRegisterEmail(e.target.value)}
                   width={250}
@@ -74,7 +74,7 @@ function AuthModal({
                 >
                   Register
                 </Button>
-              </div>
+              </div> */}
               <div className="login_form_container">
                 <Input
                   onChange={(e) => setLoginEmail(e.target.value)}

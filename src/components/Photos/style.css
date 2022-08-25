@@ -8,6 +8,7 @@
   box-shadow: rgba(0, 0, 0, 0.213) 0px 3px 8px;
   margin-top: 50px;
   border-radius: 20px;
+  background-color: #fff;
 }
 
 .ibr_card_photo_container:hover {
@@ -24,11 +25,12 @@
 
 .ibr_card_photo_detail_time_data {
   display: flex;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: center !important;
+  margin-left: 60px;
   width: 100%;
   height: 5%;
-  margin-right: 180px;
+
   margin-top: 20px;
 }
 
@@ -68,7 +70,8 @@
 .ibr_card_photo_detail_name p {
   font-family: "Josefin Sans", sans-serif !important;
   margin-top: 15px;
-  font-size: 25px;
+  font-size: 20px;
+  color: #000;
 }
 
 .ibr_btn_post {
@@ -77,6 +80,7 @@
   align-items: center;
   width: 100%;
   margin-top: 5%;
+  margin-bottom: 10px;
 }
 
 .ibr_btn_card_Post {
@@ -86,9 +90,10 @@
   justify-content: center;
   align-items: center;
   font-size: 18px !important;
-  background-color: #435832;
   border: none;
   color: #000 !important;
   text-transform: lowercase !important;
   font-family: "Josefin Sans", sans-serif !important;
+  background-color: #ffffff !important;
+  border-radius: 10px !important;
 }

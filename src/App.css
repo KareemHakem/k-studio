@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+
+.Create-card {
+  height: 50px;
+  width: 420px;
+  background-color: #00adb5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.upload-card {
+  height: 50px;
+  width: 350px;
+  background-color: #00adb5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.upload-card h2 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif !important;
+  margin-left: 10px;
+}
+
+.Create-card h2 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif !important;
+  margin-left: 10px;
+}
+
+.create-btn {
+  color: #fff !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  margin-left: 10px !important;
+  margin-top: 3px !important;
+}
+
+.no-cards-page {
+  display: flex;
+  height: 400px !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.no-cards-page h1 {
+  display: flex;
+  height: 100px;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif !important;
+  color: #00adb5;
+  font-size: 40px;
+}
+
+.login-Create-card {
+  height: 50px;
+  width: 350px;
+  background-color: #00adb5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-right: 800px;
+}
+
+.login-Create-card h2 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif !important;
+  margin-left: 10px;
+}
+
+.login-btn {
+  color: #fff !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  margin-left: 40px !important;
+  margin-top: 3px !important;
+  font-weight: 500;
+}
+
+.empty-animation {
+  height: 200px;
+  width: 270px;
+  /* z-index: 100;
+  margin-top: -200px !important;
+  margin-left: 340px; */
+}
