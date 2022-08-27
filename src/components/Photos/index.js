@@ -39,21 +39,21 @@ export default function PhotosContainer({
             className="ibr_btn_card_Post"
           >
             <EditIcon style={{ color: "#00adb5", marginRight: 5 }} />
-            Edit
+            <p>Edit</p>
           </Button>
           <Button
             onClick={() => handleClick(card.link)}
             className="ibr_btn_card_Post"
           >
             <LanguageIcon style={{ color: "#00adb5", marginRight: 5 }} />
-            Go Live
+            <p>Go Live</p>
           </Button>
           <Button
             onClick={() => handleDeleteCard(card.id)}
             className="ibr_btn_card_Post"
           >
             <DeleteIcon style={{ color: "#FF0000", marginRight: 5 }} />
-            Delete
+            <p>Delete</p>
           </Button>
         </div>
       </div>

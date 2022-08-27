@@ -97,3 +97,26 @@
   background-color: #ffffff !important;
   border-radius: 10px !important;
 }
+
+@media screen and (max-width: 880px) {
+  .ibr_card_photo_container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .ibr_card_photo_container {
+    width: 300px;
+  }
+
+  .ibr_card_photo_detail_time_data p {
+    font-size: 15px;
+  }
+  .ibr_card_photo_detail_name p {
+    font-size: 15px;
+  }
+
+  .ibr_btn_card_Post p {
+    display: none;
+  }
+}
