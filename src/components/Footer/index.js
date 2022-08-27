@@ -53,7 +53,7 @@ export default function Footer({ handleGoTop }) {
       <div className="kare_footer_right_side_container">
         <a
           className="kare_footer_lift_side_container_a"
-          href="https://500px.com/p/kareahimstokar?view=photos"
+          href="https://discord.com/channels/@me"
         >
           <img src={Image1} alt="logo" />
         </a>
@@ -66,14 +66,14 @@ export default function Footer({ handleGoTop }) {
 
         <a
           className="kare_footer_lift_side_container_a"
-          href="https://www.instagram.com/kareahimstokar/"
+          href="https://www.linkedin.com/in/kareem-mohamed-21a110221/"
         >
           <LinkedInIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>
 
         <a
           className="kare_footer_lift_side_container_a"
-          href="https://www.facebook.com/profile.php?id=100012833622272"
+          href="https://mail.google.com/mail/u/0/#inbox"
         >
           <EmailIcon style={{ color: "#fff", fontSize: 35 }} />
         </a>

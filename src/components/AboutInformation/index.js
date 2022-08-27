@@ -1,24 +1,26 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import Image from "../../assets/images/kareem1.jpg";
-
 import "./style.css";
 
 export default function AboutInformation() {
-  const boxes = document.querySelectorAll(".kar_text_description");
+  useEffect(() => {
+    const CheckBoxes = () => {
+      const boxes = document.querySelectorAll(".kar_text_description");
+      const triggerBottom = (window.innerHeight / 30) * 24;
+      boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          box.classList.add("show");
+        } else {
+          box.classList.remove("show");
+        }
+      });
+    };
 
-  const CheckBoxes = () => {
-    const triggerBottom = (window.innerHeight / 30) * 24;
-    boxes.forEach((box) => {
-      const boxTop = box.getBoundingClientRect().top;
-      if (boxTop < triggerBottom) {
-        box.classList.add("show");
-      } else {
-        box.classList.remove("show");
-      }
-    });
-  };
-  window.addEventListener("scroll", CheckBoxes);
+    setTimeout(() => {
+      window.addEventListener("scroll", CheckBoxes);
+    }, 100);
+  }, []);
 
   return (
     <div className="kar_about_information_container">

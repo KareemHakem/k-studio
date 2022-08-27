@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -17,6 +17,12 @@ export default function Navbar({ logout, user }) {
   const handleToggle = () => {
     setDisplayMenu(!displayMenu);
   };
+
+  useEffect(() => {
+    if (user === null) {
+      setDisplayMenu(false);
+    }
+  }, [user]);
 
   return (
     <div className="ka_navbar">
@@ -37,6 +43,7 @@ export default function Navbar({ logout, user }) {
             Projects
           </Link>
         </div>
+
         {user?.email ? (
           <div>
             <Button className="navbar-btn-user" onClick={handleToggle}>

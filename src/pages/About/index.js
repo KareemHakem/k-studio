@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import AboutInformation from "../../components/AboutInformation";
 import InfoCard from "../../components/InfoCard";
+import WhatIamDo from "../../components/WhatIamDo";
 import "./style.css";
 
 export default function About({ cards }) {
@@ -25,13 +26,16 @@ export default function About({ cards }) {
     }
   };
   return (
-    <>
+    <div>
+      <div className="">
+        <WhatIamDo />
+      </div>
       <div className="ibr_about_page">
         <AboutInformation />
       </div>
       <div className="kar-info-part">
         <InfoCard handleNavigationToPhotos={handleNavigationToPhotos} />
       </div>
-    </>
+    </div>
   );
 }

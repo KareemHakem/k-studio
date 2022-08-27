@@ -1,32 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./style.css";
 
 export default function InfoCard({ handleNavigationToPhotos }) {
-  const leftInfo = document.querySelectorAll(".info-left-side-container");
-  const rightInfo = document.querySelectorAll(".info-right-side-container");
+  useEffect(() => {
+    const leftInfo = document.querySelectorAll(".info-left-side-container");
+    const rightInfo = document.querySelectorAll(".info-right-side-container");
 
-  const CheckBoxes = () => {
-    const triggerBottom = (window.innerHeight / 30) * 24;
-    leftInfo.forEach((box) => {
-      const boxTop = box.getBoundingClientRect().top;
-      if (boxTop < triggerBottom) {
-        box.classList.add("show-info");
-      } else {
-        box.classList.remove("show-info");
-      }
-    });
+    const CheckBoxes = () => {
+      const triggerBottom = (window.innerHeight / 30) * 24;
+      leftInfo.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          box.classList.add("show-info");
+        } else {
+          box.classList.remove("show-info");
+        }
+      });
 
-    rightInfo.forEach((box) => {
-      const boxTop = box.getBoundingClientRect().top;
-      if (boxTop < triggerBottom) {
-        box.classList.add("show-info");
-      } else {
-        box.classList.remove("show-info");
-      }
-    });
-  };
-  window.addEventListener("scroll", CheckBoxes);
+      rightInfo.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          box.classList.add("show-info");
+        } else {
+          box.classList.remove("show-info");
+        }
+      });
+    };
+    window.addEventListener("scroll", CheckBoxes);
+  }, []);
+
   return (
     <div className="ifo-part">
       <h1 className="info-head-text">
