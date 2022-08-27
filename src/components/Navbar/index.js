@@ -18,6 +18,10 @@ export default function Navbar({ logout, user }) {
     setDisplayMenu(!displayMenu);
   };
 
+  const handleCancelMenu = () => {
+    setToggleMenu(false);
+  };
+
   useEffect(() => {
     if (user === null) {
       setDisplayMenu(false);
@@ -67,17 +71,29 @@ export default function Navbar({ logout, user }) {
                     />
                     <ul className="app__navbar-smallscreen_links">
                       <li className="p__opensans">
-                        <Link className="ka_navbar_link_Portfolio" to="/">
+                        <Link
+                          onClick={handleCancelMenu}
+                          className="ka_navbar_link_Portfolio"
+                          to="/"
+                        >
                           Portfolio
                         </Link>
                       </li>
                       <li className="p__opensans">
-                        <Link className="ka_navbar_link" to="about">
+                        <Link
+                          onClick={handleCancelMenu}
+                          className="ka_navbar_link"
+                          to="about"
+                        >
                           About
                         </Link>
                       </li>
                       <li className="p__opensans">
-                        <Link className="ka_navbar_link" to="photo">
+                        <Link
+                          onClick={handleCancelMenu}
+                          className="ka_navbar_link"
+                          to="photo"
+                        >
                           Projects
                         </Link>
                       </li>

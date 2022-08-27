@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.ka_center_link_navbar {
+  width: 450px;
+}
+
 .ka_navbar_logo_link {
   height: 50px;
   width: 120px;
