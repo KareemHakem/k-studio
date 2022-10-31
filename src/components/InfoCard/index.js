@@ -45,9 +45,9 @@ export default function InfoCard({ handleNavigationToPhotos }) {
           <p>- I have Good Knowledge in JavaScript</p>
           <p>- I have Experience in Next.js</p>
           <p>- I Experience With CSS Frameworks (Material UI & Semantic UI)</p>
-          <p>- I Experience With animation library</p>
+          <p>- I Experience With animation libraries </p>
           <p>- I have Basic Knowledge in Vue.js, But I can Learn it ;)</p>
-          <p>- I have base Knowledge in TypeScript </p>
+          <p>- I have base Knowledge in TypeScript</p>
         </div>
         <div className="line-break"></div>
         <div className="info-right-side-container">
