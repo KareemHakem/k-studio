@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
-import Image from "../../assets/images/kareem1.jpg";
-import "./style.css";
+import React, { useEffect } from 'react';
+import Image from '../../assets/images/kareem1.jpg';
+import './style.css';
 
 export default function AboutInformation() {
   useEffect(() => {
     const CheckBoxes = () => {
-      const boxes = document.querySelectorAll(".kar_text_description");
+      const boxes = document.querySelectorAll('.kar_text_description');
       const triggerBottom = (window.innerHeight / 30) * 24;
       boxes.forEach((box) => {
         const boxTop = box.getBoundingClientRect().top;
         if (boxTop < triggerBottom) {
-          box.classList.add("show");
+          box.classList.add('show');
         } else {
-          box.classList.remove("show");
+          box.classList.remove('show');
         }
       });
     };
 
     setTimeout(() => {
-      window.addEventListener("scroll", CheckBoxes);
+      window.addEventListener('scroll', CheckBoxes);
     }, 100);
   }, []);
 
@@ -46,13 +46,12 @@ export default function AboutInformation() {
         </div>
         <div className="kar_text_description">
           <p>
-            Software developer who is responsible to develop Websites and Mobile
-            app using
+            Software developer who is responsible to develop Websites
             <a className="text-box">JavaScript</a>
-            <a style={{ color: "#5ED3F3", fontWeight: 600, marginLeft: 10 }}>
+            <a style={{ color: '#5ED3F3', fontWeight: 600, marginLeft: 10 }}>
               React
             </a>
-            <a style={{ color: "#2F74C0", fontWeight: 600, marginLeft: 10 }}>
+            <a style={{ color: '#2F74C0', fontWeight: 600, marginLeft: 10 }}>
               TypeScript
             </a>
           </p>
