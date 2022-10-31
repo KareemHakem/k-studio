@@ -38,11 +38,14 @@ export default function InfoCard({ handleNavigationToPhotos }) {
       <div className="ifo-part-container-sides">
         <div className="info-left-side-container">
           <h1>ABOUT ME</h1>
-          <p>- I have 4 months of Experience</p>
+          <p>
+            - I have 4 months of commercial experience, and I have been coding
+            for 2 years
+          </p>
           <p>- I have Good Knowledge in JavaScript</p>
           <p>- I have Experience in Next.js</p>
           <p>- I Experience With CSS Frameworks (Material UI & Semantic UI)</p>
-          <p>- I Experience With animation library (lottieFiles)</p>
+          <p>- I Experience With animation library</p>
           <p>- I have Basic Knowledge in Vue.js, But I can Learn it ;)</p>
           <p>- I have base Knowledge in TypeScript </p>
         </div>
@@ -51,20 +54,20 @@ export default function InfoCard({ handleNavigationToPhotos }) {
           <h1>ALSO ABOUT ME</h1>
           <p>
             I am Kareem Mohamed, a self-taught developer, I love coding because
-            I think programming is fun :)
+            i think programing is fun :)
           </p>
-          <p>I'm 24 years old My English level is average or below average</p>
+          <p>I’m 24 years old My English level is average or below average</p>
           <p>
-            I'm self-learning and I get a sum certificate from( udemy,
-            Coursera,solo learn) and use youtube tutorials :)
+            I'm self-learning and I have many certificates from udemy, coursera
+            and sololearn
           </p>
           <p>
-            I Have a serious passion for UI effects, animations, and creating
+            I have serious passion for UI effects, animations and creating
             intuitive, dynamic user experiences.
           </p>
           <p>
-            I Love To Be a Front-End Developer And I Want To Learning Mobile App
-            Development
+            I Love being a Front-end developer, and my dream is to be mobile
+            application developer
           </p>
         </div>
       </div>
